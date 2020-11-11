@@ -4,134 +4,199 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VS Code | Workshop Desain Web</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <div id="title">
-        <img src="./assets/logo.svg" width="50px" />
-        <h1>Visual Studio Code</h1>
-      </div>
-      <div id="navbar">
-        <ul>
-          <li><a href="#">Docs</a></li>
-          <li><a href="#">Update</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">API</a></li>
-          <li><a href="#">Extensions</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
+    <header class="bg-coffee text-light">
+      <div class="container navbar navbar-expand-lg navbar-dark">
+        <a href="#" class="navbar-brand">
+          <img src="./assets/logo.svg" width="40px" class="mr-2" /> VS CODE
+        </a>
+
+        <!-- colapse/expand btn -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- nav item -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav">
+            <a class="nav-link mx-2" href="#">Docs</a>
+            <a class="nav-link mx-2" href="#">Update</a>
+            <a class="nav-link mx-2" href="#">Blog</a>
+            <a class="nav-link mx-2" href="#">API</a>
+            <a class="nav-link mx-2" href="#">Extensions</a>
+            <a class="nav-link mx-2" href="#">FAQ</a>
+          </div>
+        </div>
       </div>
     </header>
 
     <!-- Body -->
-    <article id="main">
+    <article>
       <!-- Hero Section -->
-      <div id="hero">
-        <div class="hero-txt">
-          <h1 class="slogan" style="font-weight: 300">Code Editing.</h1>
-          <h1 class="slogan" style="font-weight: 500">Redefined.</h1>
-          <p>Free. Built on open source. Runs everywhere.</p>
-          <button>
-            Download For Windows
-            <p>Stable build</p>
-          </button>
-          <p class="other">
-            <a href="#">Other Platform</a> or <a href="">Insider Edition</a>
-          </p>
-          <p class="disclaimer">
-            By using VS Code, you agree to its <br />
-            <a href="#">license and privacy statement.</a>
-          </p>
-        </div>
-        <div class="hero-img">
-          <img src="./assets/hero.png" alt="" />
+      <div class="bg-coffee text-light p-4">
+        <div
+          class="container d-flex flex-row justify-content-between align-items-center"
+        >
+          <div class="flex-shrink-1 text-center">
+            <h1 style="font-weight: 300; font-size: 3rem">Code Editing.</h1>
+            <h1 style="font-weight: 500; font-size: 3rem">Redefined.</h1>
+            <p>Free. Built on open source. Runs everywhere.</p>
+            <button type="button" class="btn btn-primary px-5 py-3 my-1">
+              <p class="h5 my-0">Download For Windows</p>
+              <p class="h6 font-weight-light my-0">Stable build</p>
+            </button>
+            <p class="bg-darker rounded-lg py-2 mt-3">
+              <a href="#">Other Platform</a> or <a href="">Insider Edition</a>
+            </p>
+            <p>
+              By using VS Code, you agree to its <br />
+              <a href="#">license and privacy statement.</a>
+            </p>
+          </div>
+
+          <div class="flex-shrink-1">
+            <img src="./assets/hero.png" class="hero-img" alt="" />
+          </div>
         </div>
       </div>
 
       <!-- 4 Column Diatas -->
-      <div class="content top">
-        <h2><a href="#">IntelliSense</a></h2>
-        <h2><a href="#">Run and Debug</a></h2>
-        <h2><a href="#">Build-in Git</a></h2>
-        <h2><a href="#">Extension</a></h2>
+      <div
+        class="container d-flex flex-row justify-content-around btn-group mt-4"
+      >
+        <a href="#" class="btn btn-light text-dark px-3 py-4"
+          ><h5>IntelliSense</h5></a
+        >
+        <a href="#" class="btn btn-light text-dark px-3 py-4"
+          ><h5>Run and Debug</h5></a
+        >
+        <a href="#" class="btn btn-light text-dark px-3 py-4"
+          ><h5>Build-in Git</h5></a
+        >
+        <a href="#" class="btn btn-light text-dark px-3 py-4"
+          ><h5>Extension</h5></a
+        >
       </div>
 
-      <h2 class="content-title">Why VS Code?</h2>
+      <p class="h2 text-center my-4">Why VS Code?</p>
 
-      <!-- Feature -->
-      <div class="content grey">
-        <img src="./assets/home-intellisense.svg" class="content-img" />
-        <div>
-          <h2 class="highlight title">Meet IntelliSense</h2>
-          <p class="highlight detail">
-            Go beyond syntax highlighting and autocomplete with IntelliSense,
-            which provides smart completions based on variable types, function
-            definitions, and imported modules.
-          </p>
+      <!-- Main Features -->
+      <div class="bg-light py-5">
+        <div class="container d-flex flex-row">
+          <img src="./assets/home-intellisense.svg" class="content-img" />
+          <div>
+            <h2 class="h2 font-weight-normal py-1 px-5 mb-3">
+              Meet IntelliSense
+            </h2>
+            <p
+              style="line-height: 1.8"
+              class="text-dark font-weight-light py-1 px-5 h5"
+            >
+              Go beyond syntax highlighting and autocomplete with IntelliSense,
+              which provides smart completions based on variable types, function
+              definitions, and imported modules.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="content">
-        <div>
-          <h2 class="highlight title">
-            Print statement debugging is a thing of the past.
-          </h2>
-          <p class="highlight detail">
-            Debug code right from the editor. Launch or attach to your running
-            apps and debug with break points, call stacks, and an interactive
-            console.
-          </p>
-        </div>
-        <img src="./assets/home-debug.svg" class="content-img" />
-      </div>
-
-      <div class="content grey">
-        <img src="./assets/home-git.svg" class="content-img" />
-        <div>
-          <h2 class="highlight title">Git commands built-in.</h2>
-          <p class="highlight detail">
-            Working with Git and other SCM providers has never been easier.
-            Review diffs, stage files, and make commits right from the editor.
-            Push and pull from any hosted SCM service.
-          </p>
+      <div class="py-5">
+        <div class="container d-flex flex-row">
+          <div>
+            <h2 class="h2 font-weight-normal py-1 px-5 mb-3">
+              Print statement debugging is a thing of the past.
+            </h2>
+            <p
+              style="line-height: 1.8"
+              class="text-dark font-weight-light py-1 px-5 h5"
+            >
+              Debug code right from the editor. Launch or attach to your running
+              apps and debug with break points, call stacks, and an interactive
+              console.
+            </p>
+          </div>
+          <img src="./assets/home-debug.svg" class="content-img" />
         </div>
       </div>
 
-      <div class="content">
-        <div>
-          <h2 class="highlight title">Deploy with confidence and ease</h2>
-          <p class="highlight detail">
-            With Microsoft Azure you can deploy and host your React, Angular,
-            Vue, Node, Python (and more!) sites, store and query relational and
-            document based data, and scale with serverless computing, all with
-            ease, all from within VS Code.
-          </p>
-        </div>
-        <img src="./assets/home-azure.svg" class="content-img" />
-      </div>
-
-      <div class="content grey">
-        <img src="./assets/extensions.png" class="content-img" />
-        <div>
-          <h2 class="highlight title">Extensible and customizable.</h2>
-          <p class="highlight detail">
-            Want even more features? Install extensions to add new languages,
-            themes, debuggers, and to connect to additional services. Extensions
-            run in separate processes, ensuring they won't slow down your
-            editor.
-          </p>
+      <div class="bg-light py-5">
+        <div class="container d-flex flex-row">
+          <img src="./assets/home-git.svg" class="content-img" />
+          <div>
+            <h2 class="h2 font-weight-normal py-1 px-5 mb-3">
+              Git commands built-in.
+            </h2>
+            <p
+              style="line-height: 1.8"
+              class="text-dark font-weight-light py-1 px-5 h5"
+            >
+              Working with Git and other SCM providers has never been easier.
+              Review diffs, stage files, and make commits right from the editor.
+              Push and pull from any hosted SCM service.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="content insider">
-        <h2 style="font-weight: 500">Want new features sooner?</h2>
+      <div class="py-5">
+        <div class="container d-flex flex-row">
+          <div>
+            <h2 class="h2 font-weight-normal py-1 px-5 mb-3">
+              Deploy with confidence and ease
+            </h2>
+            <p
+              style="line-height: 1.8"
+              class="text-dark font-weight-light py-1 px-5 h5"
+            >
+              With Microsoft Azure you can deploy and host your React, Angular,
+              Vue, Node, Python (and more!) sites, store and query relational
+              and document based data, and scale with serverless computing, all
+              with ease, all from within VS Code.
+            </p>
+          </div>
+          <img src="./assets/home-azure.svg" class="content-img" />
+        </div>
+      </div>
+
+      <div class="bg-light py-5">
+        <div class="container d-flex flex-row">
+          <img src="./assets/extensions.png" class="content-img" />
+          <div>
+            <h2 class="h2 font-weight-normal py-1 px-5 mb-3">
+              Extensible and customizable.
+            </h2>
+            <p
+              style="line-height: 1.8"
+              class="text-dark font-weight-light py-1 px-5 h5"
+            >
+              Want even more features? Install extensions to add new languages,
+              themes, debuggers, and to connect to additional services.
+              Extensions run in separate processes, ensuring they won't slow
+              down your editor.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Insider -->
+      <div class="d-flex flex-column align-items-center px-5 py-5">
+        <h2 class="h2">Want new features sooner?</h2>
         <p>Get the <a href="#">Insider build</a> instead.</p>
         <br />
         <br />
-        <h4 style="font-weight: 500">LICENSE AND PRIVACY TERMS</h4>
+        <h4 class="h4">LICENSE AND PRIVACY TERMS</h4>
         <p class="licence">
           By downloading and using Visual Studio Code, you agree to the
           <a href="#">license terms</a> and <a href="#">privacy statement</a>.
@@ -147,10 +212,13 @@
       </div>
     </article>
 
-    <footer>
-      <p><i>Workshop Desain Web, M Khoirul Asfian</i></p>
+    <footer class="bg-coffee text-light p-2">
+      <p class="m-0 text-italic">
+        <em>Workshop Desain Web, M Khoirul Asfian</em>
+      </p>
     </footer>
 
+    <script src="./js/jquery-3.5.1.slim.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
