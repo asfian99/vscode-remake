@@ -27,6 +27,9 @@ a {
 .bg-darker {
   background: #25252b;
 }
+.bg-not-so-dark {
+  background: #525257;
+}
 .hero-img {
   max-width: 50vw;
 }
